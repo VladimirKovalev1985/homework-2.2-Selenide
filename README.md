@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ksucu4vetcv7xdll?svg=true)](https://ci.appveyor.com/project/VladimirKovalev1985/homework-2-2-selenide)
