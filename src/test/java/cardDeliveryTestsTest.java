@@ -188,7 +188,7 @@ public class cardDeliveryTestsTest {
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id=\"date\"] .input__control").setValue(planningDate);
         $("[data-test-id=\"name\"] .input__control").setValue("Владимир Сергеев");
-        $("[data-test-id=\"phone\"] input").setValue("89998884455");
+        $("[data-test-id=\"phone\"] input").setValue("+89998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
         $(withText("Успешно!")).shouldHave(visible, Duration.ofSeconds(15));
@@ -204,7 +204,7 @@ public class cardDeliveryTestsTest {
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id=\"date\"] .input__control").setValue(planningDate);
         $("[data-test-id=\"name\"] .input__control").setValue("Владимир Сергеев");
-        $("[data-test-id=\"phone\"] input").setValue("99998884455");
+        $("[data-test-id=\"phone\"] input").setValue("+99998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
         $(withText("Успешно!")).shouldHave(visible, Duration.ofSeconds(15));
