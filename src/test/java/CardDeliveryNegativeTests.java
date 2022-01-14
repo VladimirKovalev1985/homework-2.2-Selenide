@@ -176,7 +176,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
@@ -205,7 +205,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("7999888445");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
@@ -220,7 +220,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("799988845");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
@@ -265,7 +265,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("799988844512");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 }
