@@ -238,6 +238,21 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id='phone'] .input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
+
+    @Test
+    public void shouldSendFormTelWithMinus(){
+        open("http://localhost:9999/");
+        String planningDate = generateDate(3);
+        $("[data-test-id=\"city\"] .input__control").setValue("Санкт-Петербург");
+        $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
+        $("[data-test-id=\"date\"] .input__control").setValue(planningDate);
+        $("[data-test-id=\"name\"] .input__control").setValue("Владимир Сергеев");
+        $("[data-test-id=\"phone\"] input").setValue("+7-999-888-44-55");
+        $("[data-test-id=\"agreement\"] .checkbox__box").click();
+        $(".button__text").click();
+        $("[data-test-id='phone'] .input_invalid .input__sub")
+                .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
+    }
 }
 
 
