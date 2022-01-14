@@ -35,7 +35,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='name'] .input_invalid .input__sub").shouldHave(text("Поле обязательно для заполнения"));
+        $("[data-test-id='name'].input_invalid .input__sub").shouldHave(text("Поле обязательно для заполнения"));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='city'] .input_invalid .input__sub").shouldHave(text("Поле обязательно для заполнения"));
+        $("[data-test-id='city'].input_invalid .input__sub").shouldHave(text("Поле обязательно для заполнения"));
     }
 
     @Test
@@ -63,7 +63,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub").shouldHave(text("Поле обязательно для заполнения"));
+        $("[data-test-id='phone'].input_invalid .input__sub").shouldHave(text("Поле обязательно для заполнения"));
     }
 
     @Test
@@ -76,7 +76,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"name\"] .input__control").setValue("Владимир Сергеев");
         $("[data-test-id=\"phone\"] input").setValue("+89998884455");
         $(".button__text").click();
-        $("[data-test-id='agreement'] .input_invalid .checkbox__text")
+        $("[data-test-id='agreement'].input_invalid .checkbox__text")
                 .shouldHave(text("Я соглашаюсь с условиями обработки и использования моих персональных данных"));
     }
 
@@ -91,7 +91,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='city'] .input_invalid .input__sub").shouldHave(text("Доставка в выбранный город недоступна"));
+        $("[data-test-id='city'].input_invalid .input__sub").shouldHave(text("Доставка в выбранный город недоступна"));
     }
 
     @Test
@@ -105,7 +105,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='city'] .input_invalid .input__sub").shouldHave(text("Доставка в выбранный город недоступна"));
+        $("[data-test-id='city'].input_invalid .input__sub").shouldHave(text("Доставка в выбранный город недоступна"));
     }
 
     @Test
@@ -119,7 +119,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+89998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='date'] .input_invalid .input__sub").shouldHave(text("Заказ на выбранную дату невозможен"));
+        $("[data-test-id='date'].input_invalid .input__sub").shouldHave(text("Заказ на выбранную дату невозможен"));
     }
 
     @Test
@@ -133,7 +133,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+89998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='date'] .input_invalid .input__sub").shouldHave(text("Заказ на выбранную дату невозможен"));
+        $("[data-test-id='date'].input_invalid .input__sub").shouldHave(text("Заказ на выбранную дату невозможен"));
     }
 
     @Test
@@ -147,7 +147,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+89998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='date'] .input_invalid .input__sub").shouldHave(text("Заказ на выбранную дату невозможен"));
+        $("[data-test-id='date'].input_invalid .input__sub").shouldHave(text("Заказ на выбранную дату невозможен"));
     }
 
     @Test
@@ -161,7 +161,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='name'] .input_invalid .input__sub")
+        $("[data-test-id='name'].input_invalid .input__sub")
                 .shouldHave(text("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы"));
     }
 
@@ -176,7 +176,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
@@ -191,7 +191,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+79998884455");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='city'] .input_invalid .input__sub").shouldHave(text("Доставка в выбранный город недоступна"));
+        $("[data-test-id='city'].input_invalid .input__sub").shouldHave(text("Доставка в выбранный город недоступна"));
     }
 
     @Test
@@ -205,7 +205,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("7999888445");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
@@ -220,7 +220,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("799988845");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
@@ -235,7 +235,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+799988844а");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
@@ -250,7 +250,7 @@ public class CardDeliveryNegativeTests {
         $("[data-test-id=\"phone\"] input").setValue("+7-999-888-44-55");
         $("[data-test-id=\"agreement\"] .checkbox__box").click();
         $(".button__text").click();
-        $("[data-test-id='phone'] .input_invalid .input__sub")
+        $("[data-test-id='phone'].input_invalid .input__sub")
                 .shouldHave(text("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 }
